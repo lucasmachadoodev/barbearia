@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">BARBEARIA JR</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="valores.html">Valores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="img"></div>
+    <div class="box">
+        <form action="">
+            <div class="center">
+                <fieldset>
+                    <legend><b>Agendamento</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="none" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome completo</label>
+                    </div>
+                    <br>
+
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser">
+                        <label for="email" class="labelInput">E-mail</label>
+                    </div>
+                    <br>
+                    
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone</label>
+                    </div>
+            
+                    <div class="inputCheck">
+                        <input type="checkbox" name="check" id="check" value="cabelo">
+                        <label for="cabelo" class="checkboxlabel">CABELO</label>
+                    </div>
+                    <div class="inputCheck">
+                        <input type="checkbox" name="check" id="check" value="cabeloBarba">
+                        <label for="cabeloBarba" class="checkboxlabel">CABELO + BARBA</label>
+                    </div>
+                    <div class="inputCheck">
+                        <input type="checkbox" name="check" id="check" value="barba">
+                        <label for="barba" class="checkboxlabel" >BARBA</label>
+                    </div>
+                    <div class="inputCheck">
+                        <input type="checkbox" name="check" id="check" value="sobrancelha">
+                        <label for="outro" class="checkboxlabel">SOBRANCELHA</label>
+                    </div>
+                    <div class="inputCheck">
+                        <input type="checkbox" name="check" id="check" value="outro">
+                        <label for="sobrancelha" class="checkboxlabel">OUTRO</label>
+                    </div>
+
+                        <label for="dataAgendamento"><strong>Data do gendamento</strong></label>
+                        <input type="date" name="dataAgendamento" id="dataAgendamento" required>
+                    
+                <input type="submit" name="submit" id="submit" onclick="alert();return false" >
+               
+            </fieldset>
+        </form>
+    </div>
+    <script src="app.js"></script>
+
+            
+            <!-- <div class="btn">
+                <button>Ler mais</button>
+                <button>Agendar horário</button>
+            </div> -->
+</body>
+</html>
